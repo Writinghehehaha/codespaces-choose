@@ -6,9 +6,9 @@ let pieBtn = document.querySelector(".pie");
 
 sweetBtn.addEventListener("click", function () {
   console.log("Hi!");
-  question.innerHTML = "Alright, cake or pie?";
-  sweetBtn.style.display = "none";
-  savoryBtn.style.display = "none";
-  cakeBtn.style.display = "initial";
-  pieBtn.style.display = "initial";
+    question.innerHTML = "Alright, cake or pie?";
+    sweetBtn.style.display = "none";
+    savoryBtn.style.display = "none";
+    cakeBtn.style.display = "initial";
+    pieBtn.style.display = "initial";
 });
