@@ -5,7 +5,7 @@ let cakeBtn = document.querySelector(".cake");
 let pieBtn = document.querySelector(".pie");
 
 sweetBtn.addEventListener("click", function () {
-  console.log("Hi! LEFT BTN");
+  console.log("Hi!");
   question.innerHTML = "Alright, cake or pie?";
   sweetBtn.style.display = "none";
   savoryBtn.style.display = "none";
