@@ -5,7 +5,7 @@ let cakeBtn = document.querySelector(".cake");
 let pieBtn = document.querySelector(".pie");
 let steakBtn = document.querySelector(".steak");
 let lasagnaBtn = document. querySelector(".lasagna");
-let cakeEat = document.querySelector("cakeEat")
+let cakeEat = document.querySelector("cakeEat");
 
 sweetBtn.addEventListener("click", function () {
   console.log("Hi! LEFT BTN");
