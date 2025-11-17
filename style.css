@@ -22,3 +22,18 @@
 .lasagnaing{
   display: none;
 }
+.cakeEat{
+  display: none;
+}
+.pieEat{
+  display: none;
+}
+.steakEat{
+  display: none;
+}
+.lasagnaEat{
+  display: none;
+}
+
+
+p{color:red;}
