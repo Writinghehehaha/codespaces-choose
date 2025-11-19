@@ -34,6 +34,8 @@
 .lasagnaEat{
   display: none;
 }
-
+.img{
+  display: none;
+}
 
 p{color:red;}
