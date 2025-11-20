@@ -6,6 +6,9 @@ let pieBtn = document.querySelector(".pie");
 let steakBtn = document.querySelector(".steak");
 let lasagnaBtn = document. querySelector(".lasagna");
 let cakeEat = document.querySelector("cakeEat");
+let cakeImage = document.querySelector("cakeImage");
+let cry = document.querySelector("cry");
+let sadMan = document.querySelector("sad");
 
 sweetBtn.addEventListener("click", function () {
   console.log("Hi! LEFT BTN");
@@ -27,11 +30,15 @@ savoryBtn.addEventListener("click", function () {
 
 cakeBtn.addEventListener("dblclick", function () {
   console.log("Hi! BTN");
-  cakeEat.style.display = "initial";
+  cakeImage.style.display = "initial";
   cakeBtn.style.display = "none";
-  question.innerHTML = "";
-  
-
-
+  question.style.display= "none";
 });
 
+cry.addEventListener("click", function() {
+  console.log("aaaaaaaaaaahhhhhhhhhhhh");
+  question.innerHTML = "if you can see this, my code failed :(";
+  sweetBtn.style.display = "none";
+  savoryBtn.style.display = "none";
+  sadMan.style.display = "initial";
+});

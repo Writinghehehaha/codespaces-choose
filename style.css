@@ -34,8 +34,23 @@
 .lasagnaEat{
   display: none;
 }
-.img{
-  display: none;
+.cakeImage{
+  display:none;
+}
+.pieImage{
+  display:none;
+}
+.steakImage{
+  display:none;
+}
+.lasagnaImage{
+  display:none;
+}
+.hideButtons{
+  display:none;
+}
+.sadMan{
+  display:none;
 }
 
-p{color:red;}
+p{color:rgb(0, 0, 0);}
