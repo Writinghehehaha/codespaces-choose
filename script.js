@@ -6,68 +6,65 @@ let pieBtn = document.querySelector(".pie");
 let steakBtn = document.querySelector(".steak");
 let lasagnaBtn = document. querySelector(".lasagna");
 let cakeEat = document.querySelector(".cakeEat");
+let pieEat = document.querySelector(".pieEat");
+let steakEat = document.querySelector(".steakEat");
+let lasagnaEat = document.querySelector(".lasagnaEat");
 let cakeImage = document.querySelector(".cakeImage");
 let pieImage = document.querySelector(".pieImage");
 let steakImage = document.querySelector(".steakImage");
 let lasagnaImage = document.querySelector(".lasagnaImage");
-let cryBtn = document.querySelector(".cry");
-let sadMan = document.querySelector(".sad");
 let kitchen = document.querySelector(".kitchen");
 
 sweetBtn.addEventListener("click", function () {
-  console.log("Hi! LEFT BTN");
-  question.innerHTML = "cake or pie?";
+  console.log("sweet");
+  question.innerHTML = "Cake or pie? Press any key for cake and double click for pie!";
   sweetBtn.style.display = "none";
   savoryBtn.style.display = "none";
   cakeBtn.style.display = "initial";
   pieBtn.style.display = "initial";
-  cryBtn.style.display = "none";
 });
 
 savoryBtn.addEventListener("click", function () {
-  console.log("Hi! RIGHT BTN");
-  question.innerHTML = "steak or lasagna";
+  console.log("savory");
+  question.innerHTML = "Steak or lasagna";
   sweetBtn.style.display = "none";
   savoryBtn.style.display = "none";
   steakBtn.style.display = "initial";
   lasagnaBtn.style.display = "initial";
-  cryBtn.style.display = "none";
   });
 
 cakeBtn.addEventListener("keyup", function () {
   console.log("Hi! CAKE BTN");
   cakeBtn.style.display = "none";
   pieBtn.style.display = "none";
-  question.style.display= "none";
+  question.innerHTML= "eat it!";
+  kitchen.src = "cake.png";
+  cakeEat.style.display = "initial";
 });
 
 pieBtn.addEventListener("dblclick", function () {
   console.log("Hi! PIE BTN");
   cakeBtn.style.display = "none";
-  pieImage.style.display = "initial";
   pieBtn.style.display = "none";
-  question.style.display= "none";
+  question.innerHTML= "eat it!";
+  kitchen.src = "pie.png";
+  pieEat.style.display = "initial";
 });
 
 steakBtn.addEventListener("mouseover", function () {
   console.log("Hi! STEAK BTN");
-  steakImage.style.display = "initial";
   steakBtn.style.display = "none";
   lasagnaBtn.style.display = "none";
-  question.style.display= "none";
+  question.innerHTML= "eat it!";
+  kitchen.src = "steak.png";
+  steakEat.style.display = "initial";
 });
 
 lasagnaBtn.addEventListener("dblclick", function () {
   console.log("Hi! LASAGNA BTN");
-  lasagnaImage.style.display = "initial";
   steakBtn.style.display = "none";
   lasagnaBtn.style.display = "none";
-  question.style.display= "none";
-});
-
-cryBtn.addEventListener("click", function() {
-  console.log("aaaaaaaaaaahhhhhhhhhhhh");
-  question.innerHTML = "if you can see this, my code failed :(";
-  sweetBtn.style.display = "none";
-  savoryBtn.style.display = "none";
+  question.innerHTML= "eat it!";
+  kitchen.src = "lasagna.png";
+  lasagnaEat.style.display = "initial";
 });
