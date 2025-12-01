@@ -14,19 +14,20 @@ let pieImage = document.querySelector(".pieImage");
 let steakImage = document.querySelector(".steakImage");
 let lasagnaImage = document.querySelector(".lasagnaImage");
 let kitchen = document.querySelector(".kitchen");
+let sadChef = document.querySelector(".sadChef");
 
 sweetBtn.addEventListener("click", function () {
   console.log("sweet");
-  question.innerHTML = "Cake or pie? Press any key for cake and double click for pie!";
+  question.innerHTML = "Cake or pie? Press any key for cake and double click for pie! (Make sure you've clicked the cake button first)";
   sweetBtn.style.display = "none";
   savoryBtn.style.display = "none";
   cakeBtn.style.display = "initial";
   pieBtn.style.display = "initial";
 });
 
-savoryBtn.addEventListener("click", function () {
+savoryBtn.addEventListener("mouseover", function () {
   console.log("savory");
-  question.innerHTML = "Steak or lasagna";
+  question.innerHTML = "Steak or lasagna? Click for steak button or double click for lasagna!";
   sweetBtn.style.display = "none";
   savoryBtn.style.display = "none";
   steakBtn.style.display = "initial";
@@ -51,7 +52,7 @@ pieBtn.addEventListener("dblclick", function () {
   pieEat.style.display = "initial";
 });
 
-steakBtn.addEventListener("mouseover", function () {
+steakBtn.addEventListener("click", function () {
   console.log("Hi! STEAK BTN");
   steakBtn.style.display = "none";
   lasagnaBtn.style.display = "none";
@@ -64,7 +65,22 @@ lasagnaBtn.addEventListener("dblclick", function () {
   console.log("Hi! LASAGNA BTN");
   steakBtn.style.display = "none";
   lasagnaBtn.style.display = "none";
-  question.innerHTML= "eat it!";
+  question.innerHTML = "eat it!";
   kitchen.src = "lasagna.png";
   lasagnaEat.style.display = "initial";
 });
+
+cakeEat.addEventListener("click", function(){
+console.log("cakeEnd");
+cakeEat.style.display = "none";
+kitchen.src = "sadChef.png";
+question.innerHTML = "The chef remarks that you weren't supposed to eat the whole thing in one sitting. You now have a stomach ache. BAD END.";
+});
+
+pieEat.addEventListener("click", function(){
+console.log("pieEnd");
+pieEat.style.display = "none";
+kitchen.src = "kitchenImage.png";
+question.innerHTML = "The pie was good. You give your compliments to your chef. GOOD END.";
+});
+
