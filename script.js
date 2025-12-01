@@ -34,24 +34,23 @@ savoryBtn.addEventListener("click", function () {
   cryBtn.style.display = "none";
   });
 
-cakeBtn.addEventListener("dblclick", function () {
-  console.log("Hi! BTN");
-  cakeImage.style.display = "initial";
+cakeBtn.addEventListener("keyup", function () {
+  console.log("Hi! CAKE BTN");
   cakeBtn.style.display = "none";
   pieBtn.style.display = "none";
   question.style.display= "none";
 });
 
 pieBtn.addEventListener("dblclick", function () {
-  console.log("Hi! BTN");
+  console.log("Hi! PIE BTN");
   cakeBtn.style.display = "none";
   pieImage.style.display = "initial";
   pieBtn.style.display = "none";
   question.style.display= "none";
 });
 
-steakBtn.addEventListener("dblclick", function () {
-  console.log("Hi! BTN");
+steakBtn.addEventListener("mouseover", function () {
+  console.log("Hi! STEAK BTN");
   steakImage.style.display = "initial";
   steakBtn.style.display = "none";
   lasagnaBtn.style.display = "none";
@@ -59,7 +58,7 @@ steakBtn.addEventListener("dblclick", function () {
 });
 
 lasagnaBtn.addEventListener("dblclick", function () {
-  console.log("Hi! BTN");
+  console.log("Hi! LASAGNA BTN");
   lasagnaImage.style.display = "initial";
   steakBtn.style.display = "none";
   lasagnaBtn.style.display = "none";
@@ -71,5 +70,4 @@ cryBtn.addEventListener("click", function() {
   question.innerHTML = "if you can see this, my code failed :(";
   sweetBtn.style.display = "none";
   savoryBtn.style.display = "none";
-  
 });
