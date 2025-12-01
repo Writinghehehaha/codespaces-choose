@@ -84,3 +84,16 @@ kitchen.src = "kitchenImage.png";
 question.innerHTML = "The pie was good. You give your compliments to your chef. GOOD END.";
 });
 
+steakEat.addEventListener("click", function(){
+console.log("steakEnd");
+steakEat.style.display = "none";
+kitchen.src = "kitchenImage.png";
+question.innerHTML = "The steak was pretty good. You give your compliments to your chef. GOOD END.";
+});
+
+lasagnaEat.addEventListener("click", function(){
+console.log("lasagnaEnd");
+lasagnaEat.style.display = "none";
+kitchen.src = "sadChef.png";
+question.innerHTML = "It didn't taste good. You pretend that it isn't going to give you a stomachache, but your chef can tell. BAD END.";
+});
