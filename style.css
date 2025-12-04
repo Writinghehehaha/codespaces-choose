@@ -10,18 +10,6 @@
 .lasagna{
   display: none;
 }
-.caking{
-  display: none;
-}
-.pieing{
-  display: none;
-}
-.steaking{
-  display: none;
-}
-.lasagnaing{
-  display: none;
-}
 .cakeEat{
   display: none;
 }
@@ -53,6 +41,9 @@
 
 p{
   color:rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  padding: 2px;
 }
 body{
   background-color: antiquewhite;
